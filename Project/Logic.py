@@ -227,5 +227,4 @@ class tv_logic(QMainWindow, Ui_TV_remote):
         value = self.Volume_bar.value()
         self.Volume_bar.setValue(max(value - 25, 0))  # Decrease by 25, capped at 0
     def mute_volume(self):
-        value = self.Volume_bar.value()
         self.Volume_bar.setValue(0)
